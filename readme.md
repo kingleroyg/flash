@@ -27,6 +27,8 @@ And, for convenience, add a facade alias to this same file at the bottom:
 Within your controllers, before you perform a redirect...
 
 ```php
+use Laracasts\Flash\Flash;
+
 public function store()
 {
     Flash::message('Welcome Aboard!');
